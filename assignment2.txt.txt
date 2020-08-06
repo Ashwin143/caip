@@ -1,0 +1,36 @@
+#1
+
+$awk -F ","'{print$0}'file2.csv | sort -nk3 -t','
+$awk -F ","'{print$0}'file2.csv | sort -nk2 -t','
+
+#2
+$ls-l->file
+$cat filesize.awk
+BEGIN{FS=""PRINTF"\N\T Files with Size in bytes \n\n"}
+{count++
+total+=$7
+printf"%3d%-20s%d\n",count,$9,$7}
+END{printf"\n\t Total files=%d\n",count
+printf"\n\t Total size=%d\n",total}
+
+$awk -f filesize.awk file
+
+#3
+
+echo "ENTER THE NUMBER :"
+read n
+n1=$n
+rev=0
+while [ $n1 -ne 0 ]
+do
+rem=`expr $n1 % 10`
+n1=`expr $n1 / 10`
+rev=`expr $rem + $rev \* 10`
+done
+if [ $n -eq $rev ]
+then
+echo $n is a Palindrome Number
+else
+echo $n is not a Palindrome Number
+fi
+
