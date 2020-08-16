@@ -3,19 +3,19 @@ x<-c(2,3,5,7,8)
 y<-c(14,20,32,42,44)
 cor(x,y)
 cor.test(x,y)
-
+ positive corelation
 
 #1b
 x<-c(2,3,5,7,8)
 y<-c(14,20,32,42,44)
-#cor(x,y)
+cor(x,y)
 z<-lm(y~x)
 #1c
 t<-data.frame(x=6)
 predict(z,t)
 plot(x,y,abline(lm(y~x)),xlab="age",ylab="weight")
 
-
+strong positive corelation
 
 #2a
 x<-c(8,7,6,4,2,1)
@@ -26,7 +26,7 @@ t<-data.frame(y=2)
 predict(z,t)
 
 plot(x,y,abline(lm(y~x)))
-
+strong negative corelation
 #2b
 
 x<-c(8,7,6,4,2,1)
@@ -37,7 +37,7 @@ t<-data.frame(x=5)
 predict(z,t)
 
 plot(x,y,abline(z))
-
+strong negative corelation
 #3
 
 x<-c(6,4,8,5,3.5)
@@ -47,7 +47,7 @@ z
 t<-data.frame(x=7.5)
 predict(z,t)
 plot(x,y,abline(z))
-
+strong positive corelation
 #4
 
 x<-c(186,189,190,192,193,193,198,201,203,205)
@@ -58,6 +58,8 @@ z
 t<-data.frame(x=208)
 predict(z,t)
 plot(x,y,abline(z))
+strong positive corelation
+
 
 #5
 x<-c(6,7,8,9,10)
@@ -69,7 +71,7 @@ z
 t<-data.frame(x=8)
 predict(z,t)
 plot(x,y,abline(z))
-
+strong negative corelation
 #6a
 
 x <- 1:6
