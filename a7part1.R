@@ -33,9 +33,9 @@ x
 
 #3
 
-x <- dpois(5, lambda=100)
+x <- dpois(100, lambda=5)
 x
-x <- dpois(3, lambda=100)
+x <- dpois(100, lambda=3)
 x
 
 #4
