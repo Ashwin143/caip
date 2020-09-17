@@ -37,6 +37,9 @@ x <- dpois(100, lambda=5)
 x
 x <- dpois(100, lambda=3)
 x
+x <- dpois(100, lambda=2)
+x
+# the width of the distribution increases with lambda. 
 
 #4
 
